@@ -14,12 +14,15 @@ public class PickUp : MonoBehaviour
 	private void Start()
 	{
 		pc = GameObject.Find("Canvas").GetComponent<PickUpCounter>();
+
+		if (modle == null)
+			modle = gameObject;
 	}
 
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag("Player"))
+		if (other.CompareTag("Player") && !pickedUp)
 		{
 			counter++;
 			pickedUp = true;
