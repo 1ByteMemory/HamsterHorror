@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 33d61f10db62fec4c8e1a58b1980afdf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AITest.unity
     guid: 7bc4096926ff7d94aa5e22290bb70afe
+  - enabled: 1
+    path: Assets/Scenes/Level Blockout.unity
+    guid: 0a0e4e6bf48a84c429ccd24e3f4ea54d
   m_configObjects: {}

@@ -13,7 +13,7 @@ public class PickUp : MonoBehaviour
 
 	private void Start()
 	{
-		pc = GameObject.Find("Canvas").GetComponent<PickUpCounter>();
+		pc = GameObject.Find("HUD Prefab").GetComponent<PickUpCounter>();
 
 		if (modle == null)
 			modle = gameObject;

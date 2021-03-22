@@ -15,6 +15,10 @@ public class BoxTrigger : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player") && endScreen != null)
+        {
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
 			endScreen.SetActive(true);
+        }
 	}
 }
